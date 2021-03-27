@@ -1,0 +1,48 @@
+#include <stdio.h>
+
+void main()
+{
+    int TRUMP[100],HILLARY[100];
+    int i,t,h,s;
+    printf("enter the number of state in which trump is winner \n");
+    scanf("%d",&t);   
+    printf("enter the number of state in which hillary is winner \n");
+    scanf("%d",&h);
+        s=t+h;
+        if (s==20)
+        {
+        printf("enter state number in which trump is winner  \n");
+        for(i=0;i<t;i++)
+    {
+        scanf("%d",&TRUMP[i]);
+    }
+     printf("enter state number in which hillary is winner \n");
+     for(i=0;i<h;i++)
+    {
+        scanf("%d",&HILLARY[i]);
+    }
+    printf("trump is winner in following states \n");
+    for(i=0;i<t;i++)
+    {
+        printf("%d",TRUMP[i]);
+    }
+    printf("\nhillary is winner in following states \n");
+    for(i=0;i<h;i++)
+    {
+        printf("%d",HILLARY[i]);
+    }
+    
+    if(h>t)
+    printf("\nHILLARY IS WINNER\n");
+    else
+    if(t>h)
+    printf("\nTRUMP IS WINNER\n");
+    else
+    printf("\nRESULT TIED\n");
+}
+else
+{
+    printf("\n The total value of state should equal to 20 \n ");
+}
+    
+}
