@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include<string.h>
+void main() 	
+{
+   int i, j,kk;
+   char input[100];
+   printf("Enter an character you want to print in the last row: ");
+   gets(input);
+   kk=strlen(input);
+   for (i = 0; i<kk; i++)
+   {
+      for (j = 0; j <= i; j++)
+      {
+         printf("%c",input[j]);
+      }
+       printf("\n");
+   }
+}
