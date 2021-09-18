@@ -1,0 +1,17 @@
+#include <stdio.h>
+void main() 
+{
+    int x,n;
+    int result = 1;
+    printf("Enter the base: ");
+    scanf("%d", &x);
+    printf("Enter the power ");
+    scanf("%d", &n);
+
+    while (n != 0) 
+    {
+        result = result*x;
+        n--;
+    }
+    printf("Answer is %d", result);
+}
