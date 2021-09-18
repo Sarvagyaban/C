@@ -1,0 +1,28 @@
+#include<stdio.h>
+void main()
+{
+ float units,EC,GST,ADT;
+ {
+ printf(" enter the number of units used\n ");
+ scanf("%f",&units);
+ if(units>=1 && units<100)
+ {
+ EC=units*2;
+ printf("electric charges are = %f",EC);
+ }
+ else if(units>=100 && units<200)
+ {
+ EC=(units)*3.50;
+ printf("electric charges are = %f",EC);
+ }
+ else if(units>=200)
+ {
+ EC=(units)*4.50;
+ printf("electric charges are = %f ",EC);
+ }
+ GST=0.1*EC;
+ printf("general sale tax is = %f",GST);
+ ADT=EC+GST;
+ printf("Amount due to is = %f",ADT);
+ }
+}
