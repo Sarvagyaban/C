@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() 
+{
+char ch;
+    float temp,f,ce;
+    printf("Enter 'C' for Celsius and 'F'for Fahrenheit \n");
+    scanf("%c",&ch);
+    if (ch=='c'||ch=='C')  
+    {
+    printf("Enter Temperature\n");
+    scanf("%f",&temp);
+    ce=(temp-32)/1.8;
+    printf("%.2f",ce);
+    }
+    else
+    if (ch=='f'||ch=='F')  
+    {
+    printf("Enter Temperature\n");
+    scanf("%f",&temp);
+    f=(1.8*temp)+32;
+    printf("%.2f",f);
+    }
+    else
+    printf("Wrong Input");
+}
