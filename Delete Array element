@@ -1,0 +1,43 @@
+#include <stdio.h>
+
+void main() 
+{
+    int arr[100],i,a=-1,n,d;
+    printf("enter the size of array \n");
+    scanf("%d",&n);
+    printf("enter the elements \n");
+   for(i=0; i<n; i++)
+    {
+        scanf("%d",&arr[i]);
+    }    
+    printf("enter the element to be deleted \n");
+   scanf("%d",&d);
+
+for(i = 0; i<n; i++)
+    {
+        if(arr[i] == d)
+        {
+            a = i;
+            break;
+        }
+    }
+
+if(a!= -1)
+    {
+        
+    for(i = a; i < n - 1; i++)
+    {   
+        arr[i] = arr[i+1];
+    }
+        
+    for(i = 0; i < n - 1; i++)
+    {    
+        printf("New Array \n");
+        printf("%d ",arr[i]);
+    }
+    }
+    
+    else
+    printf("Not found.");
+
+}
