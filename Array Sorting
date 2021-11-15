@@ -14,7 +14,7 @@ void main()
   {
    for (j = i + 1; j < n; ++j)
    {
-      if (arr[i] > arr[j])
+      if (arr[i] > arr[j])// Change Sign from (>) to (<) for changing the order of sorting
       {
          a = arr[i];
          arr[i] = arr[j];
